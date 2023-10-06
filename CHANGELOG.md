@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file. This change
 
 ## [Unreleased]
 
+- Adds support for Clojure Deps
+
 ### [0.2.2] - 2018-07-03
 ### Added
 - Testing with test.check
