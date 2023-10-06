@@ -406,8 +406,8 @@
           log-origin (d/log conn-origin)
           log-forked (d/log conn-forked)]
       (is
-        (= [:o0])
-        (collect-added (d/tx-range log-forked to0 to1)))
+        (= [:o0]
+          (collect-added (d/tx-range log-forked to0 to1))))
       (is
         (= [:o0 :o1]
           (collect-added (d/tx-range log-forked to0 tf1-bis))))
