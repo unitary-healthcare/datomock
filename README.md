@@ -2,9 +2,20 @@
 
 Mocking and forking Datomic connections in-memory.
 
-[![Clojars Project](https://img.shields.io/clojars/v/vvvvalvalval/datomock.svg)](https://clojars.org/vvvvalvalval/datomock)
+![maintenance-status](https://img.shields.io/badge/maintenance-as--is-yellow.svg)
 
-**Notes:** 
+⚠️ **Important:** This is an unmaintained fork of the
+[vvvvalvalval/datomock][datomock:gh] repository.  Please use the original one.
+
+[datomock:gh]: https://github.com/vvvvalvalval/datomock
+
+Deps:
+
+```clojure
+{io.github.unitary-healthcare/datomock {:git/sha "..."}}
+```
+
+**Notes:**
 
 * This library is _not_ an in-memory re-implementation of Datomic - just a thin wrapper on top of the Datomic Peer Library. All the heavy lifting is done by Datomic's 'speculative writes' (a.k.a [`db.with(tx)`](https://docs.datomic.com/on-prem/javadoc/datomic/Database.html#with-java.util.List-)) and Clojure's managed references ([atoms](https://clojure.org/reference/atoms))
 * Only for Peers, not Clients.
